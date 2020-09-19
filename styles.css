@@ -1,0 +1,152 @@
+:root {
+    --orange: #FF983B;
+    -thin: 400;
+    --medium-thick: 500;
+    --almost-thick: 600;
+    --thick: 700;
+    --shadow-one: 0px 4px 10px rgba(196, 196, 196, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Artegra Sans', sans-serif;
+    font-weight: var(--thin);
+    font-size: 14px;
+}
+
+h1 {
+    font-weight: var(--thick);
+}
+
+h2,
+h3 {
+    font-weight: var(--almost-thick)
+}
+
+li {
+    list-style: none;
+}
+
+.hamburger {
+    position: relative;
+    width: 42px;
+    height: 15px;
+}
+
+.item-one,
+.item-two,
+.item-three {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: var(--orange);
+}
+
+.item-two {
+    margin-top: 9px;
+}
+
+.item-three {
+    margin-top: 18px;
+}
+
+.nav {
+    border-bottom: none;
+}
+
+.navigation-section {
+    display: none;
+}
+
+.big-background {
+    position: absolute;
+    left: 0;
+    background-image: url(./images/two-sandwiches-with-salad-ham-cheese-HWBY3U2\ 1.png);
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+main {
+    position: relative;
+    top: 18rem;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.heading_words h2 {
+    font-size: 28px;
+}
+
+.btn {
+    background-color: var(--orange);
+    color: #fff;
+}
+
+.food_menu-btn {
+    height: 47px;
+    width: 140px;
+}
+
+.booking-words_heading p {
+    font-weight: var(--almost-thick);
+    color: black;
+}
+
+.card {
+    box-shadow: var(--shadow-one);
+    margin-bottom: 1.5rem;
+}
+
+.card img {
+    filter: drop-shadow(0px 4px 10px rgba(196, 196, 196, 0.15));
+}
+
+.card-text h2 {
+    font-size: 16px;
+}
+
+footer {
+    top: 22rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.email-section {
+    background: #EEF1F6;
+    height: 33vh;
+    padding-top: 1.5rem;
+    margin-bottom: 35px;
+}
+
+.email-section h2 {
+    font-size: 18px;
+}
+
+.form-group {
+    width: 80%;
+}
+
+input {
+    margin-left: 13%;
+    margin-bottom: .8rem;
+}
+
+.main-footer {
+    background-color: var(--orange);
+    color: #fff;
+    height: 62vh;
+    padding: 1.5rem;
+}
+
+.social-icons span {
+    margin-right: 10px;
+}
