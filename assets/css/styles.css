@@ -121,6 +121,10 @@ li {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 42vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .big-background p {
@@ -129,7 +133,7 @@ li {
 
 main {
     position: relative;
-    top: 18rem;
+    top: 22rem;
 }
 
 .orange {
@@ -308,8 +312,12 @@ a::before {
         margin-top: 35px !important;
         flex-direction: row;
     }
+    .big-background {
+        display: block;
+    }
     .big-background h1 {
-        width: 50%;
+        width: 47%;
+        font-size: 3.6rem;
     }
     .big-background p {
         line-height: 9px;
@@ -324,6 +332,9 @@ a::before {
         width: 60%;
         outline: none;
         margin-right: 10px;
+    }
+    input[type="email"]:focus {
+        border: black;
     }
     button {
         margin-bottom: 8px;
