@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandwich Club</title>
-    <!--<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="./assets//css/bootstrap//bootstrap.min.css">
 
     <!--link to the cdn bootstrap file-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <!-- for animations-->
+    <link rel="stylesheet" href="./aos/dist/aos.css">
     <!--link to the google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container px-4">
+    <div class="container px-4" data-aos-easing="ease-out-back" data-aos-duration="1200">
         <header>
             <nav class="navbar">
                 <div class="navbar-brand brand-logo">
@@ -60,7 +62,7 @@
                 </div>
                 <div class="products container-sm">
                     <article class="row card-deck col-lg-12 d-flex justify-content-center">
-                        <div class="card col-lg-4 border-light">
+                        <div class="card col-lg-4 border-light aos-init" data-aos="fade-left">
                             <img src="./images/Rectangle 20.jpg" alt="" class="card-img-top">
                             <div class="card-body text-center">
                                 <div class="card-text">
@@ -69,7 +71,7 @@
                                 <div class="card-subtitle price">2, 990</div>
                             </div>
                         </div>
-                        <div class="card col-lg-4 border-light">
+                        <div class="card col-lg-4 border-light aos-init" data-aos="fade-left">
                             <img src="./images/Rectangle 22.jpg" alt="" class="card-img-top">
                             <div class="card-body text-center">
                                 <div class="card-text">
@@ -78,7 +80,7 @@
                                 <div class="card-subtitle price">3,700</div>
                             </div>
                         </div>
-                        <div class="card col-lg-4 border-light">
+                        <div class="card col-lg-4 border-light aos-init" data-aos="fade-left">
                             <img src="./images/Rectangle 24.jpg" alt="" class="card-img-top">
                             <div class="card-body text-center">
                                 <div class="card-text">
@@ -89,7 +91,7 @@
                         </div>
                     </article>
                     <article class="row card-deck d-flex col-lg-12 justify-content-center">
-                        <div class="card col-lg-4 border-light">
+                        <div class="card col-lg-4 border-light aos-init" data-aos="fade-left">
                             <img src="./images/Rectangle 26.jpg" alt="" class="card-img-top">
                             <div class="card-body text-center">
                                 <div class="card-text">
@@ -98,7 +100,7 @@
                                 <div class="card-subtitle price">2,300</div>
                             </div>
                         </div>
-                        <div class="card col-lg-4 border-light">
+                        <div class="card col-lg-4 border-light aos-init" data-aos="fade-left">
                             <img src="./images/Rectangle 28.jpg" alt="" class="card-img-top">
                             <div class="card-body text-center">
                                 <div class="card-text">
@@ -107,7 +109,7 @@
                                 <div class="card-subtitle price">3,000</div>
                             </div>
                         </div>
-                        <div class="card col-lg-4 border-light">
+                        <div class="card col-lg-4 border-light aos-init" data-aos="fade-left">
                             <img src="./images/Rectangle 6.jpg" alt="" class="card-img-top">
                             <div class="card-body text-center">
                                 <div class="card-text">
@@ -120,7 +122,7 @@
                 </div>
             </section>
             <section class="booking my-3 d-flex col-lg-12">
-                <div class="booking-words mb-4 col-lg-4 col-lg-6">
+                <div class="booking-words mb-4 col-lg-4 col-lg-6" data-aos="zoom-in">
                     <div class="booking-words_heading">
                         <h2>Let Us <span class="orange">Cater</span> To Your Needs</h2>
                         <p>Really</p>
@@ -133,7 +135,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="big-area-sandwich col-lg-6">
+                <div class="big-area-sandwich col-lg-6" data-aos="zoom-in">
                     <img src="./images/Rectangle 13.jpg" class="img-fluid" alt="">
                 </div>
             </section>
@@ -147,15 +149,18 @@
                         <a href="" class="btn menu-btn">Open In Instagram</a>
                     </div>
                     <div class="carousel-section">
-                        <div class="carousel d-flex justify-content-center align-items-center">
-                            <span class="previous-btn"><img src="./images/prev.png" alt=""></span>
-                            <img src="./images/Rectangle 17.jpg" alt="" class="boxed-product">
-                            <img src="./images/Rectangle 16.jpg" class="hidden boxed-product" alt="">
-                            <img src="./images/Rectangle 15.jpg" class="hidden boxed-product" alt="">
-                            <img src="./images/Rectangle 14.jpg" class="hidden boxed-product" alt="">
-                            <span class="next-btn"><img src="./images/next.svg" alt=""></span>
+                        <a class="carousel-control-prev" href="#carouselFlowControls" data-slide="prev" role="button"><img src="./images/prev.png" alt=""></a>
+                        <a class="carousel-control-next" href="#carouselFlowControls" role="button" data-slide="next"><img src="./images/next.svg" alt=""></a>
+                        <div class="carousel slide carousel-section-inner d-flex" data-ride="carousel" id="carouselFlowControls">
+                            <div class="carousel carousel-inner">
+                                <img src="./images/Rectangle 17.jpg" alt="" class="boxed-product carousel-item active">
+                                <img src="./images/Rectangle 16.jpg" class="boxed-product carousel-item d-md-block" alt="">
+                                <img src="./images/Rectangle 15.jpg" class="boxed-product carousel-item" alt="">
+                                <img src="./images/Rectangle 14.jpg" class="boxed-product carousel-item" alt="">
+                            </div>
                         </div>
                     </div>
+
                 </article>
 
             </section>
@@ -198,8 +203,19 @@
         </section>
 
     </footer>
-
-    <script src="./menu.js"></script>
+    <script src="./aos/dist/aos.js"></script>
+    <script>
+        //for AOS File Animation
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <!--bootstrap js files and recommended stuffs-->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/popper.js"></script>
+    <script src="./assets/js/bootstrap/bootstrap.js"></script>
+    <!--file to handle the menu-->
+    <script src="./assets/js/menu.js"></script>
 </body>
 
 </html>
